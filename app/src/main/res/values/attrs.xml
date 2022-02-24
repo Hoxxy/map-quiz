@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="QuestionProgress">
+        <attr name="questionCount" format="integer"/>
+        <attr name="colorDisabled" format="color"/>
+
+    </declare-styleable>
+</resources>

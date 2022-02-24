@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/endgame_button">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/games_leaderboards_white"
+        android:tint="@color/blue_500"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inc_dlg_endgame_text_highscore_accuracy"
+        android:text="@string/act_single_game_endgame_new_avg_accuracy"
+        android:textColor="@color/grey_700"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginLeft="16dp" />
+</LinearLayout>

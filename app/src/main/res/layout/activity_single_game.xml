@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleGameActivity"
+    android:id="@+id/act_single_game_main_layout"
+    android:background="@color/cyan_50">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/act_single_game_img_map"
+        android:src="@drawable/srbija2"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/act_single_game_img_pin"
+        android:src="@drawable/cioda"
+        android:layout_marginTop="@dimen/act_single_game_pin_hiddenPos"
+        android:layout_marginStart="@dimen/act_single_game_pin_marginStart"
+        android:layout_marginLeft="@dimen/act_single_game_pin_marginStart"
+        android:adjustViewBounds="true" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:paddingTop="@dimen/global_vertical_margin"
+        android:paddingEnd="@dimen/global_horizontal_margin"
+        android:paddingRight="@dimen/global_horizontal_margin">
+
+        <TextSwitcher
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/act_single_game_tsw_target"
+            android:paddingBottom="8dp"
+            android:layout_gravity="end"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Време: "
+                    android:textSize="@dimen/act_single_game_font_statusbar_small"
+                    android:textColor="@color/primary_dark"
+                    android:layout_gravity="end" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/act_single_game_text_time_left"
+                    android:text=""
+                    android:textSize="@dimen/act_single_game_font_statusbar_small"
+                    android:textColor="@color/red_400"
+                    android:textStyle="bold"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Поени: "
+                    android:textSize="@dimen/act_single_game_font_statusbar_small"
+                    android:textColor="@color/primary_dark"
+                    android:layout_gravity="end"
+                    />
+
+                <TextSwitcher android:id="@+id/act_single_game_tsw_points" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/act_single_game_text_points_popup"
+            android:text="1234"
+            android:textSize="@dimen/act_single_game_font_points_popup"
+            android:textColor="@color/amber_500"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/act_single_game_background_shade"
+        android:background="@color/black"
+        android:alpha=".8"
+        android:visibility="invisible">
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/act_single_game_black_shade"
+        android:background="#8f000000"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/act_single_game_stats_dropdown"
+        android:background="@drawable/card_background"
+        android:paddingTop="24dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingEnd="24dp"
+        android:paddingRight="24dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <TableRow>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_query_builder_black_24dp"
+                    android:tint="@color/secondary_text" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/act_single_game_stats_text_time_left"
+                    android:text="1.8 секунди"
+                    android:textSize="18sp"
+                    android:textColor="@color/secondary_text"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_gps_fixed_black_24dp"
+                    android:tint="@color/secondary_text" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/act_single_game_stats_text_accuracy"
+                    android:text="23.4 километара"
+                    android:textSize="18sp"
+                    android:textColor="@color/secondary_text"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"/>
+            </TableRow>
+        </TableLayout>
+
+
+        <ProgressBar
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/act_single_game_stats_progressbar"
+            android:max="7000"
+            android:secondaryProgress="4000"
+            android:progressTint="@color/accent"
+            android:secondaryProgressTint="@color/grey_800"
+            android:progressBackgroundTint="@android:color/black" />
+
+        <com.adastra.pogodimesto2.gameplay.QuestionProgress
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/act_single_game_mQuestionProgress"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Укупно поена"
+            android:textColor="@color/secondary_text"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/act_single_game_stats_text_points"
+            android:text="0"
+            android:textColor="@color/secondary_text"
+            android:textSize="50sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/act_single_game_stats_text_close_hint"
+            android:text="Превуците прстом на горе да наставите игру."
+            android:textSize="14sp"
+            android:textColor="@color/secondary_text"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <io.codetail.widget.RevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/act_single_game_newPlace_wrapper"
+            android:background="#95000000"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/act_single_game_newPlace_text_title"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+    </io.codetail.widget.RevealLinearLayout>
+
+</RelativeLayout>

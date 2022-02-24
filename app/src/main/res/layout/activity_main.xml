@@ -1,0 +1,177 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/act_main_menu_main_layout"
+    tools:context=".ActivityMainMenu"
+    android:background="@color/cyan_50"
+    android:paddingTop="@dimen/global_vertical_margin"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/global_vertical_margin">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/act_main_menu_img_map"
+                android:src="@drawable/srbija" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/act_main_menu_img_pin"
+                android:src="@drawable/cioda" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/act_main_menu_img_shadow"
+                android:src="@drawable/senka"
+                android:alpha="0.55" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/act_main_menu_btn_NewGame"
+                android:layout_weight="1"
+                android:background="@drawable/main_menu_button_green"
+                android:gravity="center"
+                android:onClick="onClick_NewGame">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/imageView10"
+                    android:src="@drawable/games_controller_white"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView29"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/act_main_menu_title_single_game"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageView10" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/act_main_menu_btn_Settings"
+                android:layout_weight="1"
+                android:background="@drawable/main_menu_button_blue"
+                android:gravity="center"
+                android:onClick="onClick_Settings">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/ic_settings_white_36dp"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView22"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/act_main_menu_title_settings"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageView6" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/main_menu_button_red"
+                android:id="@+id/act_main_menu_btn_Leaderboards"
+                android:gravity="center"
+                android:onClick="onClick_Leaderboards">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/imageView7"
+                    android:src="@drawable/games_leaderboards_white"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView23"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/act_main_menu_title_leaderboards"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageView7" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/act_main_menu_btn_Achievements"
+                android:layout_weight="1"
+                android:background="@drawable/main_menu_button_yellow"
+                android:gravity="center"
+                android:onClick="onClick_Achievements">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/games_achievements_white"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView24"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/act_main_menu_title_achievements"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageView8" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Y pozicija settings dialoga -->
+    <dimen name="act_main_menu_dialog_settings_y">440dp</dimen>
+
+    <!-- Dimenzije za mapu, senku i ciodu na pocetnom ekranu (logo) -->
+    <dimen name="act_single_game_pin_marginStart">161dp</dimen>
+    <dimen name="act_single_game_pin_hiddenPos">-90dp</dimen>
+
+    <!-- Velicina fonta u status baru (big - naziv mesta; small - vreme i poeni) -->
+    <dimen name="act_single_game_font_statusbar_small">20sp</dimen>
+    <dimen name="act_single_game_font_points_popup">45sp</dimen>
+
+    <!-- Za koliko ce popup poeni da se pomeraju na gore -->
+    <dimen name="act_single_game_points_popup_displacement">100px</dimen>
+
+</resources>

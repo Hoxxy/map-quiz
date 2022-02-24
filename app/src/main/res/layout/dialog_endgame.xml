@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dlg_endgame_text_points_total"
+        android:text="0"
+        android:textSize="84sp"
+        android:textColor="@color/grey_600"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dlg_endgame_text_bestscore"
+        android:text="@string/act_single_game_endgame_bestscore"
+        android:textColor="@color/grey_400"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dlg_endgame_avg_time"
+        android:text="@string/act_single_game_endgame_avg_time"
+        android:textColor="@color/grey_400"
+        android:textSize="@dimen/dlg_endgame_avg_time_dist"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dlg_endgame_avg_accuracy"
+        android:text="@string/act_single_game_endgame_avg_accuracy"
+        android:textColor="@color/grey_400"
+        android:textSize="@dimen/dlg_endgame_avg_time_dist"
+        android:layout_gravity="center_horizontal" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/sview"
+        android:layout_marginLeft="@dimen/dlg_endgame_buttons_side_margin"
+        android:layout_marginStart="@dimen/dlg_endgame_buttons_side_margin"
+        android:layout_marginRight="@dimen/dlg_endgame_buttons_side_margin"
+        android:layout_marginEnd="@dimen/dlg_endgame_buttons_side_margin"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/dlg_endgame_inc_highscore"
+                layout="@layout/include_button_highscore"/>
+
+            <include
+                android:id="@+id/dlg_endgame_inc_highscore_time"
+                layout="@layout/include_button_highscore_time"/>
+
+            <include
+                android:id="@+id/dlg_endgame_inc_highscore_accuracy"
+                layout="@layout/include_button_highscore_accuracy"/>
+
+            <include
+                android:id="@+id/dlg_endgame_inc_signin"
+                layout="@layout/include_button_signin" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <Button
+            style="@style/BorderlessButtonRipple"
+            android:id="@+id/dlg_endgame_btn_main_menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Главни мени"
+            android:textColor="@color/grey_900"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Button
+            style="@style/BorderlessButtonRipple"
+            android:id="@+id/dlg_endgame_btn_new_game"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/act_main_menu_title_single_game"
+            android:textColor="@color/grey_900"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

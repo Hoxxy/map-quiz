@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_background"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minWidth="400dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dlg_newlevel_endOfLevel"
+                    android:id="@+id/textView13"
+                    android:textSize="18sp"
+                    android:textColor="@color/grey_600"
+                    android:layout_marginBottom="16dp"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5678"
+                    android:id="@+id/dlg_newlevel_text_points_in_level"
+                    android:textSize="24sp"
+                    autofit:minTextSize="14sp"
+                    android:textColor="@color/grey_900"
+                    android:layout_below="@+id/textView13"
+                    android:gravity="right"
+                    android:layout_alignRight="@+id/dlg_newlevel_text_points_total" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dlg_newlevel_text_points_total"
+                    android:text="1233000"
+                    android:textSize="24sp"
+                    autofit:minTextSize="14sp"
+                    android:textColor="@color/grey_900"
+                    android:layout_below="@+id/dlg_newlevel_text_points_in_level"
+                    android:gravity="end"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:text="@string/dlg_newlevel_points_in_level"
+                    android:textColor="@color/grey_800"
+                    android:layout_alignBaseline="@+id/dlg_newlevel_text_points_in_level"
+                    android:layout_toEndOf="@+id/dlg_newlevel_text_points_in_level"
+                    android:layout_toRightOf="@+id/dlg_newlevel_text_points_in_level"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView17"
+                    android:text="@string/dlg_newlevel_points_total"
+                    android:textColor="@color/grey_800"
+                    android:layout_alignBaseline="@+id/dlg_newlevel_text_points_total"
+                    android:layout_toRightOf="@+id/dlg_newlevel_text_points_total"
+                    android:layout_toEndOf="@+id/dlg_newlevel_text_points_total"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView28"
+                android:text="@string/dlg_newlevel_next"
+                android:textSize="18sp"
+                android:textColor="@color/grey_600"
+                android:layout_marginBottom="16dp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dlg_newlevel_text_type"
+                android:text="@string/act_single_game_type_landmarks"
+                android:singleLine="true"
+                android:textSize="24sp"
+                autofit:minTextSize="14sp"
+                android:textColor="@color/grey_900"
+                android:gravity="start"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dlg_newlevel_text_difficulty"
+                android:text="@string/act_single_game_diff_easy"
+                android:textColor="@color/grey_800"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Button
+            style="@style/BorderlessButtonRipple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg_newlevel_btn_cancel"
+            android:text="@string/global_cancel"
+            android:textColor="@color/accent"/>
+
+        <Button
+            style="@style/BorderlessButtonRipple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg_newlevel_btn_continue"
+            android:text="@string/global_continue"
+            android:textColor="@color/accent" />
+    </LinearLayout>
+
+</LinearLayout>

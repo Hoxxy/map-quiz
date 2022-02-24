@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/global_horizontal_margin"
+    android:paddingRight="@dimen/global_horizontal_margin"
+    android:paddingTop="@dimen/global_vertical_margin"
+    android:paddingBottom="@dimen/global_vertical_margin"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ActivityMainMenu">
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/act_main_menu_title_sound"
+        android:id="@+id/switch1"
+        android:textColor="#010000"
+        style="@style/activity_settings_titles"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BorderlessButtonRipple"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            style="@style/activity_settings_titles"
+            android:id="@+id/signInText"
+            android:text="@string/dialog_settings_play_signin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical|start|left"
+            android:layout_marginRight="8dp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/play_games"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BorderlessButtonRipple"
+        android:id="@+id/onClick_About"
+        android:text="@string/act_main_menu_title_about_us"
+        android:textColor="@color/secondary_text"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:onClick="onClick_About" />
+
+
+</LinearLayout>

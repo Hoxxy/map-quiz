@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/endgame_button">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/games_controller_white"
+        android:layout_gravity="center_vertical"
+        android:tint="@color/grey_700" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_games_signin_info"
+        android:textColor="@color/grey_700"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="16dp" />
+</LinearLayout>

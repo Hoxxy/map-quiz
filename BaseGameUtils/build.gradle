@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+    }
+}
+
+dependencies {
+
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:support-v4:24.0.0'
+    compile 'com.google.android.gms:play-services:9.2.0'
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '23.0.3'
+}
+

@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/global_horizontal_margin"
+    android:paddingRight="@dimen/global_horizontal_margin"
+    android:paddingTop="@dimen/global_vertical_margin"
+    android:paddingBottom="@dimen/global_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/nikola" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    style="@style/dlg_settings_authors_title"
+                    android:text="@string/act_main_menu_about_us_name1" />
+                <TextView
+                    style="@style/dlg_settings_authors_desc"
+                    android:text="Програмирање" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/aleksandar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    style="@style/dlg_settings_authors_title"
+                    android:text="@string/act_main_menu_about_us_name2" />
+                <TextView
+                    style="@style/dlg_settings_authors_desc"
+                    android:text="Програмирање, графика" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        style="@style/BorderlessButtonRipple"
+        android:id="@+id/dlg_about_btn_sendEmail"
+        android:text="@string/act_main_menu_about_us_send_email"
+        android:textColor="#ff363636"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:onClick="onClick_SendEmail" />
+
+</LinearLayout>

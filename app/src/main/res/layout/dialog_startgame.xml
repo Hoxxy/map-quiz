@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- layout\dialog_newlevel = layout-hdpi\dialog_newlevel -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView28"
+                android:text="@string/dlg_startgame_beginning"
+                android:textSize="18sp"
+                android:textColor="@color/grey_600"
+                android:layout_marginBottom="16dp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dlg_newlevel_text_type"
+                android:text="@string/act_single_game_type_landmarks"
+                android:singleLine="true"
+                android:textSize="24sp"
+                autofit:minTextSize="14sp"
+                android:textColor="@color/grey_900"
+                android:gravity="start"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dlg_newlevel_text_difficulty"
+                android:text="@string/act_single_game_diff_easy"
+                android:textColor="@color/grey_800"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Button
+            style="@style/BorderlessButtonRipple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg_newlevel_btn_cancel"
+            android:text="@string/global_cancel"
+            android:textColor="@color/accent"/>
+
+        <Button
+            style="@style/BorderlessButtonRipple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonStart"
+            android:text="@string/global_start"
+            android:textColor="@color/accent" />
+    </LinearLayout>
+
+</LinearLayout>

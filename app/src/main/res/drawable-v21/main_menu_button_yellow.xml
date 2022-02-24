@@ -1,0 +1,14 @@
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#FFF">
+
+    <item android:drawable="@color/amber_500" />
+    <!-- Note: <ripple> acts like a layer-list -->
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <!-- This color is not displayed in any way -->
+            <solid android:color="@android:color/black" />
+        </shape>
+    </item>
+
+</ripple>

@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Global strings -->
+    <string name="global_app_name">Погоди место!</string>
+    <string name="global_cancel">Одустани</string>
+    <string name="global_continue">Настави</string>
+    <string name="global_start">Почни</string>
+
+
+    <!-- Play Games -->
+    <string name="play_games_signin_required">Морате се пријавити да бисте могли да видите ранг листе и достигнућа.</string>
+    <string name="play_games_signin_other_error">Догодила се грешка приликом пријаве, молимо покушајте касније.</string>
+    <string name="play_games_signin_info">Пријави се на Google Play Games да би упоредио свој резултат са другима.</string>
+
+
+    <!-- ActMainMenu.java -->
+    <string name="act_main_menu_title_single_game">Нова игра</string>
+    <string name="act_main_menu_title_multiplayer">Више играча</string>
+    <string name="act_main_menu_title_leaderboards">Ранг листе</string>
+    <string name="act_main_menu_title_settings">Опције</string>
+    <string name="act_main_menu_title_exit">Изађи</string>
+    <string name="act_main_menu_title_achievements">Достигнућа</string>
+    <string name="act_main_menu_title_sound">Звук</string>
+    <string name="act_main_menu_title_about_us">О нама…</string>
+    <string name="act_main_menu_about_us_name1">Никола Караилић</string>
+    <string name="act_main_menu_about_us_name2">Александар Стефановић</string>
+    <string name="act_main_menu_about_us_email">adastra-apps@gmail.com</string>
+    <string name="act_main_menu_about_us_send_email">Пошаљи нам имејл</string>
+    <string name="act_main_menu_double_back_to_exit">Притисни још једном да изађеш.</string>
+
+
+    <!-- gameplay/ActSingleGame.java -->
+    <string name="act_single_game_type_cities">Градови</string>
+    <string name="act_single_game_type_villages">Села</string>
+    <string name="act_single_game_type_monasteries">Манастири</string>
+    <string name="act_single_game_type_landmarks">Знаменитости</string>
+    <string name="act_single_game_diff_easy">Лако</string>
+    <string name="act_single_game_diff_medium">Средње тешко</string>
+    <string name="act_single_game_diff_hard">Тешко</string>
+    <string name="act_single_game_diff_ultra">Много тешко</string>
+    <string name="act_single_game_endgame_avg_time">Просечно време: %1$s сек</string>
+    <string name="act_single_game_endgame_avg_accuracy">Просечна прецизност: %1$s км</string>
+    <string name="act_single_game_endgame_new_highscore">Ово је твој нови рекорд! (стари скор: %1$d)\nПритисни овде да видиш свој ранг.</string>
+    <string name="act_single_game_endgame_new_avg_time">Ово је твоје најбоље просечно време!\nСтаро време: %1$s\nПритисни овде да видиш свој ранг.</string>
+    <string name="act_single_game_endgame_new_avg_accuracy">Ово је твоја најбоља просечна прецизност!\nСтара прецизност: %1$s\nПритисни овде да видиш свој ранг.</string>
+
+    <!-- dialog_newlevel.xml -->
+    <string name="dlg_newlevel_endOfLevel">Крај нивоа</string>
+    <string name="dlg_newlevel_points_in_level">у нивоу</string>
+    <string name="dlg_newlevel_points_total">укупно</string>
+    <string name="dlg_newlevel_next">Следе</string>
+
+    <!-- dialog_startgame.xml -->
+    <string name="dlg_startgame_beginning">Почетак игре</string>
+    <string name="act_single_game_endgame_bestscore">Најбољи резултат: %1$d</string>
+
+    <!-- dialog_settings.xml -->
+    <string name="dialog_settings_play_signin">Пријави се на Google Play игре</string>
+    <string name="dialog_settings_play_singout">Одјави се са Google Play игара</string>
+
+</resources>

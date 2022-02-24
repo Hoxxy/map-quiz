@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Dimenzije za mapu, senku i ciodu na pocetnom ekranu (logo) -->
+    <dimen name="act_main_menu_pin_width">50dp</dimen>
+    <dimen name="pin_height">62dp</dimen>
+    <dimen name="pin_marginTop">94dp</dimen>
+    <dimen name="act_single_game_pin_marginStart">141dp</dimen>
+    <dimen name="act_single_game_pin_hiddenPos">-70dp</dimen>
+
+    <!-- Y pozicija settings dialoga -->
+    <dimen name="act_main_menu_dialog_settings_y">350dp</dimen>
+    <dimen name="ingame_pin_width">60px</dimen>
+    <dimen name="ingame_pin_height">75px</dimen>
+
+    <!-- Velicina fonta u status baru (big - naziv mesta; small - vreme i poeni) -->
+    <dimen name="font_statusbar_big">25sp</dimen>
+    <dimen name="act_single_game_font_statusbar_small">15sp</dimen>
+    <dimen name="act_single_game_font_points_popup">35sp</dimen>
+
+    <!-- Za koliko ce popup poeni da se pomeraju na gore -->
+    <dimen name="act_single_game_points_popup_displacement">75px</dimen>
+
+    <!-- dialog_endgame.xml -->
+    <!-- Ove vrednosti vaze za xhdpi i sve preko toga -->
+    <dimen name="dlg_endgame_points">75sp</dimen>
+    <dimen name="dlg_endgame_bestscore">16sp</dimen>
+    <dimen name="dlg_endgame_avg_time_dist">18sp</dimen>
+    <dimen name="dlg_endgame_buttons_side_margin">20dp</dimen>
+
+</resources>

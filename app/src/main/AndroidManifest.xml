@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adastra.pogodimesto2">
+
+    <application
+        android:name=".PogodiMesto"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/global_app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ActivityMainMenu"
+            android:label="@string/global_app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gameplay.ActivitySingleGame"
+            android:label="@string/act_main_menu_title_single_game"
+            android:parentActivityName=".ActivityMainMenu"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityMainMenu" />
+        </activity>
+        <activity
+            android:name=".ActivitySettings"
+            android:label="@string/act_main_menu_title_settings"
+            android:parentActivityName=".ActivityMainMenu"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityMainMenu" />
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_id">675788536256</string>
+
+    <string name="achievement_predjena_igra">CgkIwPOKwdUTEAIQBA</string>
+    <string name="achievement_maksimalna_preciznost">CgkIwPOKwdUTEAIQBQ</string>
+    <string name="achievement_brzinom_svetlosti">CgkIwPOKwdUTEAIQBg</string>
+    <string name="achievement_maks_poena_u_nivou">CgkIwPOKwdUTEAIQBw</string>
+    <string name="achievement_odlican_odgovor">CgkIwPOKwdUTEAIQCA</string>
+    <string name="leaderboard_najuspesniji_igraci">CgkIwPOKwdUTEAIQAA</string>
+    <string name="leaderboard_najbolja_prosecna_preciznost">CgkIwPOKwdUTEAIQAg</string>
+</resources>
